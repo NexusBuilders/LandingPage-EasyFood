@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:  skyblue;
+    background-position: center;
+}
+/*HEADER*/
+.header{
+    width: 100%;
+    background-color: rgb(9, 106, 46);
+}
+.header nav{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imglogo img{
+    height: 110px;
+    margin: 0;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.icons{
+    position: inline-flex;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*INICIO*/
+.inicio{
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+    flex-direction: column;
+    height: 83vh;
+    padding-left: 5%;
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.banner{
+    justify-content: center;
+    position: absolute;
+}
+.banner h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 60px;
+}
+.banner button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    height: 80px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 55px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover{
+    background-color: rgb(152, 152, 152);
+}
+/*FUNCIONES*/
+.funciones{
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+    flex-direction: column;
+    height: 90vh;
+    padding-left: 5%;
+    background-color: rgb(211, 242, 206);
+}
+.containerF{
+    display: flex;
+    align-items: center;
+    margin: 100px 0px;
+}
+.funciones h3{
+    color: black;
+    font-size: 42px;
+    font-weight: 1000;
+}
+.boxF{
+    margin: 0px 40px;
+}
+.boxF img{
+    background-color: rgb(110, 103, 103);
+    width: 30vh;
+    height: 45vh;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    object-fit: cover;
+}
+.containerF i{
+    font-size: 90px;
+}
+.boxF p{
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+/*BENEFICIOS*/
+.beneficios{
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(151, 232, 150);
+}
+.beneficios h2{
+    font-size: 48px;
+    font-weight: 1000;
+    padding-bottom: 70px;
+}
+.beneficios-container h3{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+.containerB{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.beneficios-box{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.beneficios-box p{
+    text-align: left;
+    font-size: 24px;
+}
+.beneficios-box i{
+    font-size: 100px;
+    padding-right: 30px;
+}
+.cartaB{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*PLANES*/
+.planes{
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+    height: 90vh;
+    background-color: rgb(211, 242, 206);
+}
+.planes h2{
+    font-size: 42px;
+}
+.boxContainerP{
+    display: flex;
+    padding: 0px 50px;
+}
+.cartaP{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+    width: 300px;
+    height: 600px;
+    background-color: transparent;
+    border: 2px solid #D9D052;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.cartaP h1{
+    padding-bottom: 30px;
+}
+.cartaP img{
+    width: 150px;
+    height: 145px;
+    font-size: 100px;
+    object-fit: fill;
+}
+.cartaP p{
+    padding-top: 20px;
+    margin: 0px 30px;
+    text-align: justify;
+    font-size: 18px;
+    height: 260px;
+}
+.cartaP button{
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 180px;
+    height: 70px;
+    border-radius: 55px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.cartaP button:hover{
+    background-color: rgb(152, 152, 152);
+    color: white;
+}
+/*NOSOTROS*/
+.nosotros{
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+    align-items: left;
+    height: 90vh;
+    background-color: rgb(151, 232, 150);
+}
+.nosotros h2{
+    font-size: 48px;
+    font-weight: 1000;
+    padding: 50px 0;
+}
+.grid-team-images{
+    display: flex;
+    padding-bottom: 100px;
+}
+.grid-team-images img{
+    margin: 0 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: black;
+}
+.nosotros p{
+    font-size: 22px;
+    padding: 0px 200px;
+}
+/*FOOTER*/
+
+.containerFooter{
+    display:flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    align-items: left;
+    height: 20vh;
+    color: white;
+    background-color: rgb(9, 106, 46); 
+    padding: 0px 100px;
+}
+.footer-contactanos{
+    margin: 20px;   
+}
+.containerFooter h2{
+    font-size: 38px;
+    font-weight: 1000;
+}
+.footer-contactanos h3{
+    font-size: 40px;
+}
+.footer-contactanos p{
+    padding-top: 20px;
+}
+.carta-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 5px;
+}
+.carta-footer i{
+    font-size: 28px;
+    margin-right: 10px;
+}
+.carta-footer p{
+    padding: 0px;
+}
+.footer-redes{
+    font-size: 68px;
+}
+.footer-redes i{
+    margin-right: 20px;
+}
+
+/*BREAKPOINT*/
+/*HEADER*/
+@media(max-width: 1225px){
+    .header nav{
+        padding:0.3rem 5%
+    }
+}
+@media(max-width: 1222px){
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position:absolute;
+        top:125.49px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgb(46, 136, 78);
+        transition: 0.3s ease;
+        overflow: hidden;
+        z-index: 100;
+    }
+    #check:checked~.navbar{
+        display:inline-block;
+        height: 21rem;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    /*Inicio*/
+    .inicio h2{
+        font-size: 32px;
+    }
+    .inicio button{
+        font-size: 18px;
+        width: 250px;
+        height: 60px;
+    }
+    /*Funciones*/
+    .containerF{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin: 0 0;
+        padding: 0px;
+        justify-content: center;
+        
+    }
+    .funciones i{
+        display: none;
+    }
+    .funciones {
+        padding: 0px;
+    }
+    .funciones h3{
+        padding-bottom: 70px;
+    }
+    .boxF{
+        margin: 5px;
+        padding: 0px;
+    }
+    .boxF p{
+        font-size: 22px;
+    }
+    .boxF img{
+        width: 120px;
+        height: 150px;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*Beneficios*/
+    .beneficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 150vh;
+    }
+    .containerB{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerB i{
+        font-size: 42px;
+        padding: 0;
+        padding-right: 5px;
+    }
+    .cartaB{
+        padding: 0;
+    }
+    .beneficios-box{
+        padding: 10px 0;
+    }
+    .beneficios h2{
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .beneficios h3{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .containerB p{
+        font-size: 22px;
+    }
+
+    /*Planes*/
+    .boxContainerP{
+        display: grid;
+    }
+    .cartaP {
+        height: 200px;
+        margin: 10px 0px;
+    }
+    .cartaP img{
+        width: 70px;
+        height: 70px;
+        padding-bottom: 5px;
+    }
+    .cartaP h1{
+        padding-bottom: 5px;
+    }
+    .cartaP p{
+        display: none;
+    }
+    .cartaP button{
+        font-size: 20px;
+        width: 130px;
+        height: 45px;
+    }
+    /*Nosotros*/
+    .nosotros{
+        height: 140vh;
+    }
+    .grid-team-images{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-self: center;
+        padding: 10px 0;
+    }
+    .grid-team-images img:nth-child(5) {
+        grid-column: span 2;
+        justify-self: center;
+    }
+    .grid-team-images img{
+        margin: 5px 20px;
+        width: 120px;
+        height: 120px;
+        padding: 0;
+    }
+    .nosotros p{
+        padding: 0 18px;
+    }
+    .nosotros h2{
+        padding: 0px;
+    }
+    /*Footer*/
+    .containerFooter{
+        padding: 0px 5px;
+    }
+    .containerFooter h2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .footer-contactanos h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .footer-contactanos p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .footer-contactanos{
+        margin: 0;
+    }
+    .carta-footer p{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .carta-footer i{
+        margin-right: 4px;
+    }
+
+    .footer-redes i{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*BREAKPOINT*/
